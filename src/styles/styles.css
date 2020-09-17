@@ -5,20 +5,65 @@
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   }
-  body Header {
+  body header {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    margin-left: 0;
     background-image: -webkit-gradient(linear, left top, right top, from(#ff0000), color-stop(#ffa500), color-stop(#ffff00), color-stop(#008000), color-stop(#0000ff), color-stop(#4b0082), to(#ee82ee));
     background-image: linear-gradient(90deg, #ff0000, #ffa500, #ffff00, #008000, #0000ff, #4b0082, #ee82ee);
   }
-  body Header img {
+  body header img {
     height: 7rem;
-    padding: 1rem 2rem;
+    width: auto;
+    margin: 1rem 2rem;
+  }
+  body header h1 {
+    margin-right: 2rem;
+    color: white;
+  }
+  body form {
+    padding: 1rem;
+    width: 90%;
+    margin: auto;
+  }
+  body form button {
+    margin: 1rem 0;
+    background-color: #4b0082;
+    color: #ffffff;
+    font-weight: bold;
+  }
+  body .meme {
+    position: relative;
+    width: 90%;
+    margin: auto;
+  }
+  body .meme img {
+    width: 90vw;
+  }
+  body .meme h2 {
+    position: absolute;
+    width: 90%;
+    text-align: center;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    margin: 15px 0;
+    padding: 0 5px;
+    font-family: impact, sans-serif;
+    font-size: 2em;
+    text-transform: uppercase;
+    color: white;
+    letter-spacing: 1px;
+    text-shadow: 2px 2px 0 #000, -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 0 2px 0 #000, 2px 0 0 #000, 0 -2px 0 #000, -2px 0 0 #000, 2px 2px 5px #000;
+  }
+  body .meme h2:nth-child(2) {
+    top: 0;
+  }
+  body .meme h2:nth-child(3) {
+    bottom: 0;
   }
 }
 
@@ -29,7 +74,7 @@
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   }
-  body Header {
+  body header {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -43,9 +88,65 @@
     background-image: -webkit-gradient(linear, left top, right top, from(#ff0000), color-stop(#ffa500), color-stop(#ffff00), color-stop(#008000), color-stop(#0000ff), color-stop(#4b0082), to(#ee82ee));
     background-image: linear-gradient(90deg, #ff0000, #ffa500, #ffff00, #008000, #0000ff, #4b0082, #ee82ee);
   }
-  body Header img {
+  body header img {
     height: 7rem;
     padding: 1rem 2rem;
+  }
+  body header h1 {
+    margin-right: 2rem;
+    color: white;
+  }
+  body main {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: auto;
+  }
+  body main form {
+    position: relative;
+    padding: 1rem;
+    left: -13rem;
+  }
+  body main form button {
+    margin: 1rem 0;
+    background-color: #4b0082;
+    color: #ffffff;
+    font-weight: bold;
+  }
+  body main .meme {
+    position: relative;
+  }
+  body main .meme img {
+    max-width: 650px;
+  }
+  body main .meme h2 {
+    position: absolute;
+    width: 90%;
+    text-align: center;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    margin: 15px 0;
+    padding: 0 5px;
+    font-family: impact, sans-serif;
+    font-size: 2em;
+    text-transform: uppercase;
+    color: white;
+    letter-spacing: 1px;
+    text-shadow: 2px 2px 0 #000, -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 0 2px 0 #000, 2px 0 0 #000, 0 -2px 0 #000, -2px 0 0 #000, 2px 2px 5px #000;
+  }
+  body main .meme h2:nth-child(2) {
+    top: 0;
+  }
+  body main .meme h2:nth-child(3) {
+    bottom: 0;
   }
 }
 /*# sourceMappingURL=styles.css.map */

@@ -29,7 +29,7 @@ class MemeGenerator extends Component {
 
   render() {
     return (
-      <div>
+      <main>
         <form>
           <input
             type="text"
@@ -49,12 +49,12 @@ class MemeGenerator extends Component {
           <br />
           <button>Generate</button>
         </form>
-        <div>
+        <div className="meme">
           <img src={this.state.image} alt="" />
           <h2>{this.state.topText}</h2>
           <h2>{this.state.bottomText}</h2>
         </div>
-      </div>
+      </main>
     );
   }
 }
